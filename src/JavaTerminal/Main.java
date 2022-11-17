@@ -18,6 +18,7 @@ public class Main {
         handler.register(new PWDCommand());
         handler.register(new ExitCommand());
         handler.register(new EchoCommand());
+        handler.register(new HistoryCommand());
 
         // Keep accepting commands while our scanning is running, and
         // we haven't quit.
