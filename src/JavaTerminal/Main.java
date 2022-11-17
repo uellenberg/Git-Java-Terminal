@@ -13,13 +13,6 @@ public class Main {
 
         // Register our commands.
         handler.register(new HelpCommand());
-        handler.register(new CDCommand());
-        handler.register(new LSCommmand());
-        handler.register(new PWDCommand());
-        handler.register(new ExitCommand());
-        handler.register(new EchoCommand());
-        handler.register(new HistoryCommand());
-        handler.register(new CatCommand());
 
         // Keep accepting commands while our scanning is running, and
         // we haven't quit.
