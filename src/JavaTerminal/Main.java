@@ -13,6 +13,7 @@ public class Main {
 
         // Register our commands.
         handler.register(new HelpCommand());
+        handler.register(new CDCommand()); // pasted by bella
 
         // Keep accepting commands while our scanning is running, and
         // we haven't quit.
