@@ -4,6 +4,7 @@ import JavaTerminal.Commands.*;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import JavaTerminal.Commands.LSCommand;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +14,7 @@ public class Main {
 
         // Register our commands.
         handler.register(new HelpCommand());
+        handler.register(new LSCommmand());
 
         // Keep accepting commands while our scanning is running, and
         // we haven't quit.
