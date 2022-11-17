@@ -1,5 +1,7 @@
 package JavaTerminal;
 
+import java.util.ArrayList;
+
 public class Data {
     /**
      * The current directory that we're in.
@@ -15,6 +17,11 @@ public class Data {
      * The current machine.
      */
     public String machine;
+
+    /**
+     * A list of commands which have been ran.
+     */
+    public ArrayList<String> history = new ArrayList<>();
 
     /**
      * Has the program exited?

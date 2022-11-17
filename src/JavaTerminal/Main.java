@@ -37,6 +37,8 @@ public class Main {
 
             handler.handle(cmd, cmdArgs, data);
 
+            data.history.add(line);
+
             if(!data.quit)
                 printPrompt(data);
         }
