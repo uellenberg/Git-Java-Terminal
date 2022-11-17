@@ -3,6 +3,7 @@ package JavaTerminal;
 import JavaTerminal.Commands.CDCommand;
 import JavaTerminal.Commands.CommandHandler;
 import JavaTerminal.Commands.HelpCommand;
+import JavaTerminal.Commands.LSCommmand;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -16,6 +17,7 @@ public class Main {
         // Register our commands.
         handler.register(new HelpCommand());
         handler.register(new CDCommand());
+        handler.register(new LSCommmand());
 
         // Keep accepting commands while our scanning is running, and
         // we haven't quit.
