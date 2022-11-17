@@ -17,6 +17,7 @@ public class Main {
         handler.register(new LSCommmand());
         handler.register(new PWDCommand());
         handler.register(new ExitCommand());
+        handler.register(new EchoCommand());
 
         // Keep accepting commands while our scanning is running, and
         // we haven't quit.
