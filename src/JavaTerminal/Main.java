@@ -16,11 +16,12 @@ public class Main {
         handler.register(new CDCommand());
         handler.register(new LSCommmand());
         handler.register(new PWDCommand());
+        handler.register(new ExitCommand());
 
         // Keep accepting commands while our scanning is running, and
         // we haven't quit.
         printPrompt(data);
-        while(scanner.hasNextLine() && !data.quit) {
+        while(!data.quit && scanner.hasNextLine()) {
             String line = scanner.nextLine();
             if(line.isBlank()) continue;
 
@@ -35,7 +36,8 @@ public class Main {
 
             handler.handle(cmd, cmdArgs, data);
 
-            printPrompt(data);
+            if(!data.quit)
+                printPrompt(data);
         }
     }
 
